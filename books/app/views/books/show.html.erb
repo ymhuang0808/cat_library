@@ -11,13 +11,8 @@
 </p>
 
 <p>
-  <strong>Publish:</strong>
-  <%= @book.publish %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @book.date %>
+  <strong>Publication_date:</strong>
+  <%= @book.publication_date %>
 </p>
 
 <p>
@@ -33,6 +28,11 @@
 <p>
   <strong>Isbn:</strong>
   <%= @book.isbn %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @book.notes %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |

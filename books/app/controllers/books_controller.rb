@@ -12,7 +12,7 @@ class BooksController < ApplicationController
   def show
   end
 
-  # GET /books/new
+  # GET /books/new<p><%=link_to "why need to link to say hello", welcome_say_hello_path %></p>
   def new
     @book = Book.new
   end
@@ -69,6 +69,6 @@ class BooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def book_params
-      params.require(:book).permit(:name, :author, :publish, :date, :price, :tags, :isbn)
+      params.require(:book).permit(:name, :author, :publication_date, :price, :tags, :isbn, :notes)
     end
 end

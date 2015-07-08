@@ -20,12 +20,8 @@
     <%= f.text_field :author %>
   </div>
   <div class="field">
-    <%= f.label :publish %><br>
-    <%= f.text_field :publish %>
-  </div>
-  <div class="field">
-    <%= f.label :date %><br>
-    <%= f.date_select :date %>
+    <%= f.label :publication_date %><br>
+    <%= f.text_field :publication_date %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
@@ -38,6 +34,10 @@
   <div class="field">
     <%= f.label :isbn %><br>
     <%= f.number_field :isbn %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
   </div>
   <div class="actions">
     <%= f.submit %>
