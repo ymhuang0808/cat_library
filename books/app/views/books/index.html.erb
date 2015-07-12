@@ -7,11 +7,11 @@
     <tr>
       <th>Name</th>
       <th>Author</th>
-      <th>Publish</th>
-      <th>Date</th>
+      <th>Publication_date</th>
       <th>Price</th>
       <th>Tags</th>
       <th>Isbn</th>
+      <th>Notes</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,11 +21,11 @@
       <tr>
         <td><%= book.name %></td>
         <td><%= book.author %></td>
-        <td><%= book.publish %></td>
-        <td><%= book.date %></td>
+        <td><%= book.publication_date %></td>
         <td><%= book.price %></td>
         <td><%= book.tags %></td>
         <td><%= book.isbn %></td>
+        <td><%= book.notes %></td>>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
